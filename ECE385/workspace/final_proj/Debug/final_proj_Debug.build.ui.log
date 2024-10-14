@@ -1,0 +1,21 @@
+2024-04-25T22:54:11.736069500255-22:54:11 **** Incremental Build of configuration Debug for project final_proj ****
+000-make all 
+000-'Building file: ../src/lw_usb_main.c'
+000-'Invoking: MicroBlaze gcc compiler'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb_main.o" -IC:/Users/yanxinj2/ECE385/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb_main.d" -MT"src/lw_usb_main.o" -o "src/lw_usb_main.o" "../src/lw_usb_main.c"
+000-'Finished building: ../src/lw_usb_main.c'
+000-' '
+000-'Building target: final_proj.elf'
+000-'Invoking: MicroBlaze gcc linker'
+000-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/yanxinj2/ECE385/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "final_proj.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/hex_array.o ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: final_proj.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size final_proj.elf  |tee "final_proj.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  24708	1699444	   3680	1727832	 1a5d58	final_proj.elf
+000-'Finished building: final_proj.elf.size'
+000-' '
+00255-
+22:54:14 Build Finished (took 3s.86ms)
+

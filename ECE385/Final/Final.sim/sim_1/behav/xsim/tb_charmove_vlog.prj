@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Final.gen/sources_1/bd/mb_ddr3/ipshared/ec67/hdl" --include "../../../../Final.gen/sources_1/ip/clk_wiz_0" \
+"../../../../Final.gen/sources_1/ip/char2_rom/sim/char2_rom.v" \
+"../../../../Final.gen/sources_1/ip/char1_rom/sim/char1_rom.v" \
+
+sv xil_defaultlib  --include "../../../../Final.gen/sources_1/bd/mb_ddr3/ipshared/ec67/hdl" --include "../../../../Final.gen/sources_1/ip/clk_wiz_0" \
+"../../../../../char1/char1_example.sv" \
+"../../../../../char1/char1_palette.sv" \
+"../../../../../char2/char2_palette.sv" \
+"../../../../Final.srcs/sources_1/new/charmove.sv" \
+"../../../../Final.srcs/sim_1/new/tb_charmove.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

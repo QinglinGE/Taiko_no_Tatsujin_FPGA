@@ -1,0 +1,2 @@
+char2_rom.v,verilog,xil_defaultlib,../../../../Final.gen/sources_1/ip/char2_rom/sim/char2_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
